@@ -1,0 +1,14 @@
+{
+  "name": "docker_web_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Daniil Semeniuk",
+  "main": "helloBiden.js",
+  "scripts": {
+    "start": "node helloBiden.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "utf8": "^3.0.0"
+  }
+}
