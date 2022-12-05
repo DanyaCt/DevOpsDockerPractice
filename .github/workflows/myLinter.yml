@@ -1,0 +1,21 @@
+name: newLinter
+on: push
+
+jobs:
+  first-job:
+    name: FirstLint
+    runs-on: ubuntu-latest
+    steps:
+        - name: Checkout 
+          uses: actions/checkout@v3
+        - name: Our Linter 
+          uses: github/super-linter@v4.9.7
+        - name: Build image 
+          run: docker build . -t sebtec1212/node-web-app
+        - name: Log into Dockerhub 
+          uses: docker/login-action@v2
+          with:
+            username: sebtec1212
+            password: ${{ secrets.DOCKERHUB_PASSWORD }}
+        - name: Docker push
+          run: docker push sebtec1212/node-web-app
