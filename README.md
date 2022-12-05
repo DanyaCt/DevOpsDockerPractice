@@ -1,6 +1,6 @@
 <!-- markdownlint-disable -->
 # Docker
-### Було створений додаток node.js, та Dockerfile
+### Було створений додаток Node.js, та Dockerfile
 ## Білд зображення
 ```
 docker build . -t sebtec1212/node-web-app:0.2
