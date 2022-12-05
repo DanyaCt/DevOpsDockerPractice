@@ -1,7 +1,6 @@
 const http = require('http');
 const os = require("os");
 
-let Name = os.userInfo().username;
 const hostname = '0.0.0.0';
 const port = 80;
 
