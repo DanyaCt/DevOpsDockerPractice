@@ -7,5 +7,5 @@ const server = http.createServer((req, res) => {
   res.end('hello biden, its zelensky, we need five millions rockets to bomb donetsk children, Slava Ukraini')
 })
 server.listen(port, hostname, () => {
-  console.log('Server running at http://${hostname}:${port}/')
+  console.log('Server running at http://${hostname}:${port}/');
 })
